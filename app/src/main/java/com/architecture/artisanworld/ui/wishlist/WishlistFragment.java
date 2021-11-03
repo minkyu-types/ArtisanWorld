@@ -20,16 +20,9 @@ public class WishlistFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        wishlistViewModel =
-                new ViewModelProvider(this).get(WishlistViewModel.class);
+        wishlistViewModel = new ViewModelProvider(this).get(WishlistViewModel.class);
         View root = inflater.inflate(R.layout.fragment_wishlist, container, false);
-        final TextView textView = root.findViewById(R.id.text_notifications);
-        wishlistViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 }

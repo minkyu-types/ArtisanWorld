@@ -20,16 +20,9 @@ public class MakerFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        makerViewModel =
-                new ViewModelProvider(this).get(MakerViewModel.class);
+        makerViewModel = new ViewModelProvider(this).get(MakerViewModel.class);
         View root = inflater.inflate(R.layout.fragment_maker, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        makerViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 }

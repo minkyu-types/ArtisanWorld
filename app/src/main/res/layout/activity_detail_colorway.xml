@@ -4,12 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.maker.MakerFragment">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview_maker"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical"/>
+    tools:context=".ui.maker.DetailColorwayActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".ui.maker.DetailColorwayActivity"></activity>
+        <activity android:name=".ui.maker.ColorwayActivity" />
+        <activity android:name=".ui.maker.SculpActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
