@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class ColorwayDTO implements Serializable {
 
-    public String colorwayImageUrl; // 해당 colorway의 사진 Url
+    public String colorwayImageUrl; // 해당 colorway의 사진 Url, 누르면 확대되게
     public String colorwayName; // 해당 colorway의 이름
 
     //상단부 정보
@@ -15,7 +15,7 @@ public class ColorwayDTO implements Serializable {
     public boolean like; // 좋아요 여부
     public boolean oneOff; // one-off 여부, 1/1 아이콘
     public boolean raffle; // raffle 여부, R 아이콘
-    public boolean commission; //commission 여부, C 아이콘을
+    public boolean commission; //commission 여부, C 아이콘
     public boolean fulfillment; // fulfillment 여부, F 아이콘
     public Integer quantity; // 해당 colorway가 총 몇 개 만들어졌는지
 
