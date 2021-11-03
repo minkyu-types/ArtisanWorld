@@ -7,6 +7,7 @@
     android:weightSum="11"
     android:padding="12sp"
     android:orientation="vertical"
+    android:background="#000000"
     tools:context=".ui.maker.DetailColorwayActivity">
 
     <ImageView
@@ -15,7 +16,8 @@
         android:layout_height="0sp"
         android:layout_weight="6"
         android:padding="8sp"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/ic_launcher"
+        android:background="@drawable/image_edge"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,6 +57,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" > "
+                        android:textColor="#ffffff"
                         android:textStyle="bold"/>
                     <TextView
                         android:id="@+id/cwRoot2"
@@ -68,6 +71,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" > "
+                        android:textColor="#ffffff"
                         android:textStyle="bold"/>
                     <TextView
                         android:id="@+id/cwRoot3"
@@ -85,6 +89,7 @@
                     android:layout_height="wrap_content"
                     android:text="Cherry blossom Bongocat v2"
                     android:textStyle="bold"
+                    android:textColor="#ffffff"
                     android:textSize="16sp"
                     android:layout_below="@+id/cwRoot"/>
 
@@ -123,13 +128,129 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1sp"
-            android:layout_marginTop="8sp"
+            android:layout_marginTop="17sp"
             android:background="@drawable/view_line"/>
 
-        <GridLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0sp"
-            android:layout_weight="8.5"/>
+            android:layout_weight="8.5"
+            android:weightSum="10"
+            android:layout_marginTop="8sp">
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="Maker"
+                    android:textColor="#ffffff"
+                    android:paddingRight="16sp"
+                    android:gravity="right|center_vertical"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="Retail"
+                    android:textColor="#ffffff"
+                    android:paddingRight="16sp"
+                    android:gravity="right|center_vertical"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="Quantity"
+                    android:textColor="#ffffff"
+                    android:paddingRight="16sp"
+                    android:gravity="right|center_vertical"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="Collaboration"
+                    android:textColor="#ffffff"
+                    android:paddingRight="16sp"
+                    android:gravity="right|center_vertical"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:textColor="#ffffff"
+                    android:paddingRight="16sp"
+                    android:gravity="right|center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:weightSum="5"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/detailMaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="Hellocaps"
+                    android:textColor="#ffffff"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="16sp"
+                    android:background="@drawable/edge_white_leftonly"/>
+                <TextView
+                    android:id="@+id/detailRetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="$110"
+                    android:textColor="#ffffff"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="16sp"
+                    android:background="@drawable/edge_white_leftonly"/>
+                <TextView
+                    android:id="@+id/detailQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="?? / ??"
+                    android:textColor="#ffffff"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="16sp"
+                    android:background="@drawable/edge_white_leftonly"/>
+                <TextView
+                    android:id="@+id/detailCollaboration"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text=" - "
+                    android:textColor="#ffffff"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="16sp"
+                    android:background="@drawable/edge_white_leftonly"/>
+                <TextView
+                    android:id="@+id/detailDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:text="2021/08/14"
+                    android:textColor="#ffffff"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="16sp"
+                    android:background="@drawable/edge_white_leftonly"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/view_line"/>
 
     </LinearLayout>
 
