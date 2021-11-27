@@ -1,4 +1,4 @@
-package com.architecture.artisanworld.ui.maker;
+package com.architecture.artisanworld.ui.keyboard;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.architecture.artisanworld.R;
 
-public class DetailColorwayActivity extends AppCompatActivity {
+public class DetailModelActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_colorway);
+        setContentView(R.layout.activity_detail_model);
     }
 }

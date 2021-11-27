@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.architecture.artisanworld.ui.maker.MakerFragment"
+        android:name="com.architecture.artisanworld.ui.artisan.MakerFragment"
         android:label="@string/title_maker"
         tools:layout="@layout/fragment_maker" />
 
