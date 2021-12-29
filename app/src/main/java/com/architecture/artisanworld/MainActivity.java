@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(view);
 
         // 여기서 이 부분이 있고/없고가 어떤 차이가 있는지
-        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(

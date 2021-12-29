@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.architecture.artisanworld.ui.home.HomeFragment"
+        android:name="com.architecture.artisanworld.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.architecture.artisanworld.ui.artisan.MakerFragment"
+        android:name="com.architecture.artisanworld.maker.MakerFragment"
         android:label="@string/title_maker"
         tools:layout="@layout/fragment_maker" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.architecture.artisanworld.ui.wishlist.WishlistFragment"
+        android:name="com.architecture.artisanworld.wishlist.WishlistFragment"
         android:label="@string/title_wishlist"
         tools:layout="@layout/fragment_wishlist" />
 </navigation>
