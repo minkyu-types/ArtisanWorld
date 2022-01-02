@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_maker, R.id.navigation_wishlist)
                 .build();
-        NavHostFragment navHostFragment = (NavHostFragment)getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
+        NavHostFragment navHostFragment = (NavHostFragment)getSupportFragmentManager().findFragmentById(R.id.viewpager_nav_host);
 
         if(navHostFragment != null){
             NavController navController = NavHostFragment.findNavController(navHostFragment);
