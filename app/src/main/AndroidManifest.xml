@@ -3,6 +3,10 @@
     package="com.architecture.artisanworld">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,11 +15,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".fragments.keyboard.DetailModelActivity"></activity>
-        <activity android:name=".fragments.keyboard.MakerActivity" />
-        <activity android:name=".artisan.DetailColorwayActivity" />
-        <activity android:name=".artisan.ColorwayActivity" />
-        <activity android:name=".artisan.SculpActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
@@ -26,5 +25,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

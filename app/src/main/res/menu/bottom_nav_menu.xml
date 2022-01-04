@@ -4,12 +4,12 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/icon_bottomnavigation_home"
-        android:title="@string/title_home" />
+        android:title="@string/title_keyboard" />
 
     <item
         android:id="@+id/navigation_maker"
         android:icon="@drawable/icon_bottomnavigation_maker"
-        android:title="@string/title_maker" />
+        android:title="@string/title_artisan" />
 
     <item
         android:id="@+id/navigation_wishlist"

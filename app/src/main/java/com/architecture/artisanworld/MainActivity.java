@@ -15,17 +15,15 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
+    ActivityMainBinding mainBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        com.architecture.artisanworld.databinding.ActivityMainBinding mainBinding = ActivityMainBinding.inflate(getLayoutInflater());
+        mainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         View view = mainBinding.getRoot();
         setContentView(view);
 
-        // 여기서 이 부분이 있고/없고가 어떤 차이가 있는지
-
-        BottomNavigationView navView = findViewById(R.id.nav_view);
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_maker, R.id.navigation_wishlist)
                 .build();
@@ -33,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(navHostFragment != null){
             NavController navController = NavHostFragment.findNavController(navHostFragment);
-            NavigationUI.setupWithNavController(navView, navController);
+            NavigationUI.setupWithNavController(mainBinding.navView, navController);
         }
     }
 
