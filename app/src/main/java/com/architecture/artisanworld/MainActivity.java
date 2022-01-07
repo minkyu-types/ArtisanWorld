@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(view);
 
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_maker, R.id.navigation_wishlist)
+                R.id.navigation_keyboard, R.id.navigation_artisan, R.id.navigation_wishlist)
                 .build();
         NavHostFragment navHostFragment = (NavHostFragment)getSupportFragmentManager().findFragmentById(R.id.viewpager_nav_host);
 
